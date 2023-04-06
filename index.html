@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="calculator.ico">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="second">
+            <div class="divison">
+                <h1>Calculator</h1>
+                <input class="input" type="text" name="inputbox" id="text1">
+            </div>
+            <div class="row">
+                <button class="button top" onclick="clr()">C</button>
+                <button class="button top" onclick="back_space()">&#x21e4</button>
+                <button class="button top" onclick="myfunction('%')">%</button>
+                <button class="button left" onclick="myfunction('/')">&#247</button>
+            </div>
+            <div class="row">
+                <button class="button" onclick="myfunction(7)">7</button>
+                <button class="button" onclick="myfunction(8)">8</button>
+                <button class="button" onclick="myfunction(9)">9</button>
+                <button class="button left" onclick="myfunction('*')">x</button>
+            </div>
+            <div class="row">
+                <button class="button" onclick="myfunction(4)">4</button>
+                <button class="button" onclick="myfunction(5)">5</button>
+                <button class="button" onclick="myfunction(6)">6</button>
+                <button class="button left" onclick="myfunction('-')">-</button>
+            </div>
+            <div class="row">
+                <button class="button" onclick="myfunction(1)">1</button>
+                <button class="button" onclick="myfunction(2)">2</button>
+                <button class="button" onclick="myfunction(3)">3</button>
+                <button class="button left" onclick="myfunction('+')">+</button>
+            </div>
+            <div class="row">
+                <button class="button" id="button0" onclick="myfunction(0)">0</button>
+                <button class="button" onclick="myfunction('00')">00</button>
+                <button class="button" onclick="myfunction('.')">.</button>
+                <button class="button left" onclick="equals()">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
